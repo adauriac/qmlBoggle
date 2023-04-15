@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qmlBoggle.qml</file>
+	<file>resources/A0.png</file>
+    </qresource>
+</RCC>
+
