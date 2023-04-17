@@ -10,10 +10,19 @@ public:
   laClasse(QObject* label);
   ~laClasse();
   void setCounter(int a);
-  void incr();
   int m_cpt;
   QObject *m_label;
+  void setter(std::vector<QObject*> *Images,std::vector<QObject*> *LineEdits,QObject *btnSolve,QObject *btnPlay);
+  bool isFilled();
+
 public slots:
   void cppSlot(const QString &msg);
-
+  void solveSlot(const QString &msg);
+  void playSlot(const QString &msg);
+private:
+  std::vector<QObject*> *m_lesImages;
+  std::vector<QObject*> *m_lesLineEdits;
+  QObject *m_btnPlay;
+  QObject *m_btnSolve;
+  std::vector<QString> m_codes;
 };
